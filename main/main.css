@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html ,body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header{
+    height: 57px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FDFBFB;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo img{
+    height: 42px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.logo p{
+    color: black;
+    font-weight: bold;
+    font-size: 34px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-bar ul{
+    display: flex; 
+}
+.nav-bar ul li{
+    list-style: none;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-bar ul li:nth-child(3){
+    padding:2px 10px;
+    border-style: solid;
+    border-color: #F5576C;
+    border-radius: 50px;
+    border-width: 1px;
+    margin: 0px 30px;
+}
+.main{
+    background: linear-gradient(0deg, rgba(34,195,108,0.8709677419354839) 0%, rgba(61,45,253,1) 100%);
+    height: 100%;
+}
+.main__create{
+    width: 100%;
+    height: 80px;
+}
+.main__create--link--img{
+    height: 60px;
+    margin: 10px;
+}
+.main__content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.main__content__element{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin: 10px auto;
+    background-color:  #a4c439;
+    border-radius: 15px;
+}
+.main__content__element-link{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__content__element-link--title{
+    color: black;
+    font-weight: bold;
+    margin: 7px 0;
+}
+.main__content__element-note{
+    color: black;
+    margin: 0 20px 10px 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    line-clamp: 8;
+    overflow: hidden;
+}
